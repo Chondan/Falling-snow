@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-image: url("./asset/background2.jpg");
+    background-size: cover;
+    background-position-y: 15%;
+}
+button {
+    position: absolute;
+    top: 0;
+}
+div#controlBtn {
+    color: white;
+    top: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: pointer;
+}
+div.status {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 68px;
+    outline: none;
+}
+div.play {
+    background-color: rgb(27, 238, 80);
+    animation: blink 1s infinite;
+}
+div.pause {
+    background-color: rgb(238, 52, 27);
+}
+@keyframes blink {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
